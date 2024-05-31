@@ -1,0 +1,15 @@
+[Unit]
+Description=Python script for displaying distance on LED Matrix display
+After=network-online.target
+
+[Service]
+Type=exec
+PIDFile=/var/run/display_distance.pid
+ExecStart=/home/pi/venv/bin/python /home/pi/display_distance.py --serve-in-foreground
+KillSignal=SIGINT
+Restart=always
+User=pi
+Group=pi
+
+[Install]
+WantedBy=multi-user.target
