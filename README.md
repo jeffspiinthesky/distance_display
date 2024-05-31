@@ -62,16 +62,16 @@ pip install adafruit-circuitpython-us100
 ### Connect devices
 Connect the LED Matrix and US-100 to the GPIO pins shown below:
 * LED Matrix
- * VCC (Voltage In) = 4
- * GND (Ground) = 14
- * DIN (Data In) = 19
- * CS (Chip Select) = 24
- * CLK (Clock) = 23
+  * VCC (Voltage In) = 4
+  * GND (Ground) = 14
+  * DIN (Data In) = 19
+  * CS (Chip Select) = 24
+  * CLK (Clock) = 23
 * US100
- * VCC (Voltage In) = 2
- * TX (Transmit) = 8
- * RX (Receive) = 10
- * GND (Ground) = 6
+  * VCC (Voltage In) = 2
+  * TX (Transmit) = 8
+  * RX (Receive) = 10
+  * GND (Ground) = 6
 ### Clone this code
 ```
 git clone https://github.com/jeffspiinthesky/distance_display.git
