@@ -95,6 +95,6 @@ CTRL-c to stop it
 ```
 sudo cp display_distance.service /usr/lib/systemd/system/
 sudo systemctl enable display_distance
+sudo systemctl start display_distance
 ```
 ## ENJOY!!!
-sudo systemctl start display_distance
