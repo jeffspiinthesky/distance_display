@@ -48,7 +48,7 @@ class DistanceDisplay:
         else:
           # Blank the LED display
           text(draw,(0,0),'',fill="white",font=proportional(LCD_FONT))
-      # Sleep for 1 second
+      # Sleep for 5 seconds
       time.sleep(1)
 
 if __name__ == "__main__":

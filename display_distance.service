@@ -5,7 +5,8 @@ After=network-online.target
 [Service]
 Type=exec
 PIDFile=/var/run/display_distance.pid
-ExecStart=/home/pi/venv/bin/python /home/pi/display_distance.py --serve-in-foreground
+StandardOutput=journal+console
+ExecStart=/home/pi/distance_display/venv/bin/python -u /home/pi/distance_display/display_distance.py --serve-in-foreground
 KillSignal=SIGINT
 Restart=always
 User=pi
